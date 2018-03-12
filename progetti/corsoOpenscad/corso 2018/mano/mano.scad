@@ -49,8 +49,8 @@ module disegno(h)
     union()
     {
      linear_extrude(40,10,scale=3)
-     projection(cut) scale ([0.5,0.5,0.5]) translate ([0,0,0]) poly_path4240(1, min_line_mm(4.0), 100.0);
-      scale ([0.5,0.5,0.5]) poly_path4226(2, min_line_mm(1.0), 100.0);
+     projection() scale ([0.5,0.5,0.5]) translate ([0,0,0]) poly_path4240(1, min_line_mm(4.0), 100.0);
+      color("red") scale ([0.5,0.5,0.5]) poly_path4226(2, min_line_mm(1.0), 100.0);
     }
     union()
     {
