@@ -18,6 +18,8 @@ posX_viti = 75;
 // Y distance between screw
 posY_viti = 75;
 
+/* [Other] */
+// Hdmi & Jack lenght side
 pareti_dimX = 56;
 // External Y dimension
 pareti_dimY = case_dimY + 2*sp_raspPI;
