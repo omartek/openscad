@@ -1,17 +1,15 @@
-/* [RaspberryPI external box dimensions] */
-// External X dimension
-pareti_dimX = 56;
-// External Y dimension
-pareti_dimY = 69;
-// External Z dimension
-pareti_dimZ = 36;
+/* [RaspberryPI holder] */
+// Y dimension of the case i.e. SD side (HDMI+jack side is fixed to 56)
+case_dimY = 63;
+// Z dimension of the case
+case_dimZ = 33;
 // wall thickness
 sp_raspPI = 3;
 
 /* [Vesa base dimensions] */
-// Thickness
+// Vesa base thickness
 sp_Vesa = 3;
-// diameter
+// Vesa base diameter
 dia_Vesa = 122;
 // screw diameter
 dia_viti = 5;
@@ -19,6 +17,12 @@ dia_viti = 5;
 posX_viti = 75;
 // Y distance between screw
 posY_viti = 75;
+
+pareti_dimX = 56;
+// External Y dimension
+pareti_dimY = case_dimY + 2*sp_raspPI;
+// External Z dimension
+pareti_dimZ = case_dimZ + sp_raspPI;
 
 module raspPI(){ // disegno pareti con alette superiori (box for raspberryPI - two L walls)
     difference(){
