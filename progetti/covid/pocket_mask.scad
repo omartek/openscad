@@ -1,1 +1,1 @@
-import("pocket Mask_holder.stl");
+projection(cut=true) import("pocket Mask_holder.stl");
